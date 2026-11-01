@@ -49,3 +49,28 @@
 @media (prefers-reduced-motion: reduce) {
   .motion-ready .carousel figure { opacity: 1; }
 }
+
+.why-section { padding-top: 0; }
+.why-panel { display: grid; grid-template-columns: 1.2fr 1fr; gap: 70px; align-items: center; border-block: 1px solid var(--line); padding-block: 48px; }
+.why-copy h2 { font-size: 39px; font-weight: 600; letter-spacing: -1.7px; line-height: 1.15; margin: 0 0 24px; }
+.why-copy > p:not(.eyebrow) { max-width: 510px; font-size: 13px; line-height: 1.9; color: var(--muted); margin: 14px 0 0; }
+.sensor-note { padding: 30px; border-radius: 25px; background: var(--panel); }
+.sensor-note .feature-icon { margin-bottom: 20px; }
+.sensor-note .eyebrow { color: var(--muted); font-size: 8px; margin-bottom: 12px; }
+.sensor-note h3 { font-size: 26px; font-weight: 600; letter-spacing: -.8px; line-height: 1.15; margin: 0 0 18px; }
+.sensor-note > p:not(.eyebrow) { font-size: 12px; line-height: 1.85; color: var(--muted); margin: 12px 0 0; }
+.sensor-note strong { font-weight: 600; color: var(--ink); }
+.sensor-note .text-link { font-size: 10px; margin-top: 20px; }
+.sensor-note > .sensor-footnote { font-size: 9px !important; margin-top: 19px !important; }
+@media (max-width: 800px) {
+  .why-panel { gap: 30px; }
+  .why-copy h2 { font-size: 32px; }
+  .sensor-note { padding: 24px; }
+}
+@media (max-width: 600px) {
+  .why-section { padding-top: 0; }
+  .why-panel { grid-template-columns: 1fr; gap: 28px; padding-block: 35px; }
+  .why-copy h2 { font-size: 33px; letter-spacing: -1.5px; }
+  .why-copy > p:not(.eyebrow) { font-size: 12px; }
+  .sensor-note h3 { font-size: 25px; }
+}
