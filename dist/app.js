@@ -42,3 +42,19 @@ carousel.addEventListener('keydown', event => {
 });
 new ResizeObserver(updateCarousel).observe(carousel);
 updateCarousel();
+
+// Reveal each render when it enters the viewport, including on horizontal scroll.
+if ('IntersectionObserver' in window && !reducedMotion.matches) {
+  const renderObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('render-visible');
+        renderObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+  carousel.querySelectorAll('figure').forEach(figure => renderObserver.observe(figure));
+}
+reducedMotion.addEventListener('change', event => {
+  if (event.matches) document.documentElement.classList.remove('motion-ready');
+});

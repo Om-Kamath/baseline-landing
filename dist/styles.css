@@ -6,3 +6,46 @@
 @media(max-width:800px){.wrap{width:calc(100% - 48px)}.site-header{height:79px}.nav-note{font-size:8px;padding-left:20px}.hero-brand{padding-top:30px}.hero h1{font-size:21vw}.circle{width:40px;height:40px;top:65px;left:0}.sparkle{font-size:50px;right:0;top:15px}.hero-lower{grid-template-columns:1fr 1.7fr 1fr;min-height:390px}.hero h2{font-size:30px;letter-spacing:-1.3px;margin-inline:-35px}.hero-copy{padding-top:32px}.hero-copy>.pill{font-size:8px;padding:6px 8px}.hero-copy>p{font-size:11px;line-height:1.7;max-width:260px;margin-inline:-7px}.hero-phone{padding-top:40px;max-width:155px}.hero-phone-right{padding-top:59px}.phone{border-radius:28px;padding:5px}.phone img{border-radius:22px}.island{height:11px;top:11px}.hero .button{font-size:10px;padding:12px 15px;min-height:43px;gap:7px}.hero .button>span{margin-left:2px}.hero-fineprint{font-size:8px;gap:7px;margin-top:20px}.hero-bottom{margin-top:15px}.tiny-label{font-size:7px;letter-spacing:1px}.phone-note{display:none}.plus{font-size:40px;left:-18px}.dotted-arc{width:70px;right:-15px}.score-visual{height:190px}.ring-side{font-size:12px}.recovery-ring{width:110px;height:110px;padding:8px}.recovery-ring strong{font-size:40px}.score-card{padding-inline:21px}.score-card h3{font-size:21px}.score-card>p{min-height:90px}.score-card .pill{font-size:7px}.charge-number strong{font-size:52px}.charge-number>span{font-size:8px}.features-grid{gap:28px}.features h3{font-size:15px}.features article p{font-size:11px}.steps{gap:30px}.steps h3{font-size:17px}.carousel{grid-auto-columns:calc((100% - 36px)/3)}.gallery-back{height:325px}.open-panel{grid-template-columns:1fr;gap:30px}.open-copy>p:not(.eyebrow){max-width:500px}.code-window{width:100%;max-width:450px;justify-self:center;transform:rotate(1deg)}.code-window pre{font-size:12px}.faq{gap:35px}.faq h2{font-size:30px}.footer-top{gap:20px}.footer-wordmark{font-size:35px}.footer-top>p{font-size:10px}.footer-top>div{gap:17px;font-size:10px}.footer-bottom{gap:25px}}
 @media(max-width:600px){.wrap{width:calc(100% - 40px)}.nav-note{display:none}.nav-actions{gap:21px}.site-header{height:73px}.mini-logo{font-size:39px}.theme-toggle{width:33px;height:33px}.hero-brand{padding-top:27px}.introducing{font-size:10px}.hero h1{font-size:21.5vw;margin-top:7px}.circle{height:29px;width:29px;top:35px;left:1px}.sparkle{font-size:40px;top:17px}.hero-lower{display:grid;grid-template-columns:1fr 1fr;gap:0 32px;margin-top:15px;min-height:0}.hero-copy{grid-row:1;grid-column:1/-1;padding:12px 8px 0}.hero h2{font-size:38px;margin:20px -10px 16px;letter-spacing:-1.7px}.hero-copy>.pill{font-size:9px}.hero-copy>p{font-size:12px;max-width:300px;margin:0 auto 22px}.hero .button{font-size:12px;gap:10px;min-height:47px;padding-inline:21px}.hero .button>span{margin-left:12px}.how-link{font-size:11px;margin-top:18px}.hero-fineprint{margin-top:18px;font-size:9px}.hero-phone{grid-row:2;max-width:180px;padding-top:0;justify-self:center;width:100%;margin-top:43px}.hero-phone-left{margin-left:10px;transform:rotate(-7deg)}.hero-phone-right{margin-right:10px;transform:rotate(8deg);margin-top:62px}.hero-phone .phone{border-radius:29px;padding:5px}.hero-phone .phone img{border-radius:23px}.hero-phone .island{top:12px}.plus{font-size:42px;bottom:22px;left:-35px}.dotted-arc{right:-15px;bottom:50px}.hero-bottom{margin-top:35px;padding-bottom:20px}.tiny-label{font-size:6px;letter-spacing:.8px;max-width:115px;line-height:1.6}.tiny-label:last-child{text-align:right}.section{padding-block:65px}.section-heading{margin-bottom:28px}.section-heading h2{font-size:33px;letter-spacing:-1.5px}.eyebrow{font-size:8px;margin-bottom:17px}.numbers .section-heading>p:last-child{position:static;margin-top:18px;font-size:12px}.score-grid{grid-template-columns:1fr;gap:18px}.score-card{padding-inline:25px;border-radius:24px}.score-card .pill{font-size:8px}.score-visual{height:195px;gap:35px}.recovery-ring{width:135px;height:135px}.recovery-ring strong{font-size:48px}.ring-side{font-size:14px}.score-card>p{font-size:12px;min-height:0}.score-card h3{font-size:23px}.charge-visual{padding-top:35px}.charge-number strong{font-size:60px}.charge-number>span{font-size:10px}.charge-bar{height:17px}.bar-labels{font-size:9px}.card-foot{font-size:10px}.example-note{font-size:9px;line-height:1.6}.features{padding-top:0}.features .section-heading{margin-bottom:34px}.centered{text-align:left}.features-grid{grid-template-columns:1fr 1fr;column-gap:24px;row-gap:28px}.feature-icon{margin-bottom:17px;width:39px;height:39px}.features h3{font-size:15px;line-height:1.35}.features article p{font-size:11px;line-height:1.85}.feature-tag{font-size:6px;letter-spacing:.5px;line-height:1.7}.features-grid article{padding-bottom:22px}.how-sparkle{font-size:60px;right:0;top:26px}.steps{grid-template-columns:1fr;gap:25px;padding-top:5px}.steps li{position:relative;padding:20px 0 0 48px;border-top:1px solid var(--line)}.step-number{position:absolute;left:0;top:23px;padding:0;margin:0;border:0;font-size:12px}.steps h3{font-size:18px}.steps p{max-width:100%;font-size:12px;margin-bottom:0}.how-foot{font-size:9px;margin-top:33px;line-height:1.6}.gallery-header{margin-bottom:30px;gap:15px}.carousel-controls{gap:7px}.circle-button{width:34px;height:34px}.circle-button .icon{width:17px;height:17px}.carousel{grid-auto-columns:76%;gap:16px;margin-right:-20px;padding-right:20px}.gallery-back{height:425px;padding:30px 30px 0}.gallery-back .phone{max-width:225px}.gallery-back .island{height:15px}.screenshots .example-note{text-align:left}.opensource{padding-top:0}.open-panel{padding:29px 22px;gap:32px;border-radius:23px}.open-copy h2{font-size:29px;letter-spacing:-1.3px}.open-copy>p:not(.eyebrow){font-size:12px}.code-window pre{font-size:clamp(8px,2.6vw,11px);padding:14px 12px}.code-toolbar{padding:12px}.code-bottom{font-size:8px;padding:13px}.faq{padding-top:0;grid-template-columns:1fr;gap:8px}.faq h2{font-size:33px}.faq .text-link{margin-top:20px}.faq-list{margin-top:0}summary{font-size:12px;padding:21px 0}footer{padding-top:28px}.footer-top{flex-wrap:wrap;gap:18px;margin-bottom:25px}.footer-wordmark{font-size:38px}.footer-top>p{margin-left:auto}.footer-top>div{width:100%;margin-left:0;gap:23px;font-size:10px}.footer-bottom{display:block}.footer-bottom p{font-size:8px}.footer-bottom>span{display:block;font-size:6px;margin-top:20px}.footer-top>p{font-size:9px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.motion-ready .reveal{opacity:1;transform:none}.carousel{scroll-behavior:auto}}
+
+/* Render motion stays on inner frames, preserving the responsive phone tilts. */
+@keyframes phone-arrive {
+  from { opacity: 0; transform: translate3d(0, 38px, 0) rotate(-3deg) scale(.97); }
+  to { opacity: 1; transform: translate3d(0, 0, 0) rotate(0) scale(1); }
+}
+@keyframes phone-drift {
+  0%, 100% { transform: translate3d(0, 0, 0) rotate(0); }
+  50% { transform: translate3d(0, -10px, 0) rotate(.8deg); }
+}
+@keyframes render-reveal {
+  from { opacity: 0; transform: translate3d(0, 38px, 0) rotate(3deg) scale(.96); }
+  to { opacity: 1; transform: translate3d(0, 8px, 0) rotate(0) scale(1); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .hero-phone-left > .phone {
+    animation: phone-arrive .95s cubic-bezier(.2,.7,.2,1) both,
+               phone-drift 3.4s 1s ease-in-out;
+  }
+  .hero-phone-right > .phone {
+    animation: phone-arrive .95s .16s cubic-bezier(.2,.7,.2,1) both,
+               phone-drift 3.4s 1.16s ease-in-out reverse;
+  }
+  .motion-ready .carousel figure { opacity: 0; transition: opacity .4s; }
+  .motion-ready .carousel figure.render-visible { opacity: 1; }
+  .motion-ready .render-visible .phone {
+    animation: render-reveal .9s var(--render-delay, 0s) cubic-bezier(.2,.7,.2,1) both;
+  }
+  .carousel figure:nth-child(2) { --render-delay: .1s; }
+  .carousel figure:nth-child(3) { --render-delay: .2s; }
+  .carousel figure:nth-child(4) { --render-delay: .3s; }
+  .gallery-back .phone { transition: transform .5s cubic-bezier(.2,.7,.2,1), box-shadow .5s; }
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .gallery-back:hover .phone {
+    animation: none;
+    transform: translate3d(0, -5px, 0) rotate(-2deg) scale(1.025);
+    box-shadow: 0 30px 36px -12px #171a2545, 0 2px 3px #0004;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .motion-ready .carousel figure { opacity: 1; }
+}
