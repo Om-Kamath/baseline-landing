@@ -9,30 +9,44 @@ python3 -m http.server 4173 --directory dist
 Includes a persistent light/dark theme, native keyboard-accessible FAQ, scroll-snap screenshot carousel, reduced-motion support, and SEO/social metadata. No JavaScript dependencies or build step. Screenshot SVGs are lightweight illustrative placeholders based on the app references; replace them with production captures when ready. Recreate those illustrations with `python3 make-assets.py`.
 
 
-## Cloudflare Pages deployment
+## Cloudflare Workers deployment
 
-The production Pages project is `baseline-landing`, served at `https://baseline-landing.pages.dev` and `https://baseline.omkamath.tech` once the custom domain is active.
+Production Worker: `baseline-landing`.
+Default URL: `https://baseline-landing.omganesh402.workers.dev`.
 
-Cloudflare Pages uses `wrangler.jsonc`, with `pages_build_output_dir` set to `./dist`. The directory already contains the complete site, so no build step or dependency installation is required.
+Wrangler uploads `dist/` as static assets. No Worker script, dependency installation, or application build is required.
 
 | Setting | Value |
 | --- | --- |
-| Project | `baseline-landing` |
+| Worker name | `baseline-landing` |
 | Production branch | `main` |
-| Framework | None |
-| Build command | `exit 0` (or leave blank) |
-| Output directory | `dist` |
+| Build command | Leave blank (or `exit 0`) |
+| Deploy command | `npx wrangler deploy` |
 | Root directory | Repository root |
 
-For direct upload from this directory:
+Manual deployment:
 
 ```sh
 npx wrangler login
-npx wrangler pages deploy dist --project-name baseline-landing --branch main
+npx wrangler deploy
 ```
 
-For automatic updates, connect `Om-Kamath/baseline-landing` to this Pages project and ensure the Cloudflare Pages GitHub app has access to the repository.
+Check the deployment configuration without publishing:
 
-Add `baseline.omkamath.tech` under the Pages project's Custom domains. In the external `omkamath.tech` DNS zone, set a CNAME record with host `baseline`, target `baseline-landing.pages.dev`, and TTL Auto. Cloudflare manages the HTTPS certificate. Nameservers can remain with the current DNS provider for this Pages subdomain setup.
+```sh
+npx wrangler deploy --dry-run
+```
+
+### Custom domain
+
+Workers custom domains require an active Cloudflare DNS zone in the same account. The domain registration can stay at .tech Domains.
+
+1. Add `omkamath.tech` to Cloudflare DNS on the Free plan.
+2. Review the imported DNS records against the existing provider, including the main website, `www`, `thoughts`, and all email and verification records. Do not change nameservers until those records are complete.
+3. At the registrar, set the domain's nameservers to the exact pair assigned by Cloudflare. Existing DNSSEC must be migrated according to Cloudflare's DNSSEC instructions if enabled.
+4. Once Cloudflare reports the zone as Active, open Worker `baseline-landing` → Domains → Add Domain, and enter `baseline.omkamath.tech`.
+5. Cloudflare creates the DNS record and HTTPS certificate. If a stale `baseline` CNAME from the Pages setup exists, remove that record before adding the Workers custom domain.
+
+A CNAME to a `workers.dev` hostname at an external DNS provider does not configure a Workers custom domain. The previous Pages deployment is no longer the deployment target.
 
 `.openai/hosting.json` belongs to the earlier Sites preview. Cloudflare uses `wrangler.jsonc`.
